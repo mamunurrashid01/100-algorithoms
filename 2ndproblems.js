@@ -64,3 +64,41 @@ function isprime(num) {
 }
 
 console.log(isprime(10));
+
+// problems 07 : stars rectangle create
+let rows = 5;
+let cols = 4;
+// let stars = "";
+// for (let i = 0; i < rows; i++) {
+//   for (let j = 0; j <= cols; j++) {
+//     stars += " * ";
+//   }
+//   stars += "\n";
+// }
+// console.log(stars);
+
+// problems 07 : stars hollow rectangle create
+let stars = "";
+for (let i = 0; i <= rows; i++) {
+  for (let j = 0; j <= cols; j++) {
+    if (j == 0 || j == cols) {
+      stars += "*";
+    } else if (i == 0 || i == rows) {
+      stars += "*";
+    } else {
+      stars += " ";
+    }
+  }
+  stars += "\n";
+}
+console.log(stars);
+
+// problems 07 : pyramid with stars create
+const n = 5;
+for (let i = n; i >= 1; i--) {
+  for (let j = 1; j <= i; j++) {
+    stars += "* ";
+  }
+  stars += "\n";
+}
+console.log(stars);
